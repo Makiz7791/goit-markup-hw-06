@@ -536,16 +536,14 @@
               <label for="comment" class="form-label text">Комментарий</label>
               <textarea name="comment" id="comment" class="form-textarea"></textarea>
             </div>
+
             <div class="form-field terms-of-use-container">
-              <label class="form-checkbox-text">
-                <input type="checkbox" value="agree" name="terms-of-use" class="form-checkbox">
-                    <svg class="checkbox-icon">
-                      <use href="./images/icons/symbol-defs.svg#icon-icon-check"></use>
-                    </svg>
-                  Соглашаюсь с рассылкой и принимаю 
-                <a href="" class="terms-of-use-link">Условия договора</a>
+              <input type="checkbox" value="agree" name="terms-of-use" id="terms-of-use" class="form-checkbox">
+              <label class="form-checkbox-text" for="terms-of-use">
+              Соглашаюсь с рассылкой и принимаю
+              <a href="" class="terms-of-use-link">Условия договора</a>
               </label>
-            </div>
+              </div>
             <button type="submit" class="form-button button">Отправить</button>
           </form>
         </div>

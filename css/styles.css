@@ -521,6 +521,36 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+.form-input:hover,
+.form-input:hover + svg use .form-input:focus,
+.form-input:focus + svg use {
+fill: #2196f3;
+border: 1px solid #2196f3;
+}
+
+.form-checkbox-text {
+position: relative;
+}
+
+.form-checkbox-text::after {
+content: "";
+width: 16px;
+height: 15px;
+border: 1px solid #212121;
+position: absolute;
+left: -25px;
+top: 3px;
+border-radius: 2px;
+}
+
+.form-checkbox:checked + .form-checkbox-text::after {
+background-image: url(../images/icons/icon-check.svg);
+background-color: #2196f3;
+border-color: #2196f3;
+background-size: contain;
+background-origin: border-box;
+}
+
 .hero-title {
   font-weight: 600;
   font-size: 44px;
